@@ -1,0 +1,63 @@
+
+Explain basics of binary analysis:
+	The problem I'm going to show you is under binary analysis, what this means is that I will be examining an executable file for a computer, a file that contains the instructions that the computer needs to follow in order to complete a task.
+
+	Generally, programs are 'written' by programmers in what we call a "high-level" language -- for example you may have heard of Java or C or to some extent Python -- which is then 'compiled' down to something that the computer understands (what we call assembly instructions). What this does is 'abstracts' the programmer telling the computer to print out "Hello world" to such an extent that they could easily perform something simple in a short amount of time.
+
+To the problem:
+	So the challenge given to us is called 'Sorcery' and it gives us a file called 'sorcery.5a9777120468'
+
+	Really to do any binary analysis, you need to use the tools provided in the GNU operating system, I'll find out what this file is using the 'file' tool...
+
+	So its an "OS X Mach-O 64-bit executable." Which means that it is a program designed to be run on Macs. While this does provide some extra information if I get stuck at some point later on, right now all it tells me is what tool I need to use in order to do actual analysis.
+
+	So the plan at this point is to use this tool to show me these 'instructions' within the executable
+
+Skipping to the point:
+	I need to decompile using a tool called objconv (there are a couple others I could use, gdb, or objdump, gdb is really designed for live analysis and debugging, not static analysis, and objdump is not compatible with Mach O executables) which I do using the command:
+
+	~/Documents/C++/objconv/objconv -fnasm sorcery.5a9777120468 sorcery.5a9777120468.nasm
+
+	Although it is a matter of preference, I output the instructions in the NASM (intel) format because I like its comment syntax the most.
+
+	Now the instructions are in text form in a .nasm format...
+
+Actual analysis:
+	When you open it up it looks scary. Although it seems that way, it can really be broken down a lot: because this is a "Capture the Flag" event, I'm gonna search for "flag"... and would you look at that, there is a result.
+
+	I don't want to explain how exactly assembly structure works, but we know that this is an important section of the binary, so I'll focus most of my effort on that alone.
+
+	Part One:
+		The _z4Flag subroutine is really only important in two parts
+		The first part just makes a character array and put the above characters on the stack
+
+		There are 48 lines just moving a byte to increasing locations on the stack:
+		“        mov     byte [rbp-0x59B], 113                   # 0DB2 _ C6. 85, FFFFFA65, 71”
+		This means that the literal value ‘113’ (decimal) is being pushed to the stack base pointer (rbp) - 0x59B bytes. The stack continues to grow downward with each line.
+
+		I used a python script (maybe ill post later if i clean it up lol) to take this decimal value on each line, then get the corresponding ASCII character and print them all out, resulting in the string : ‘!qzsaxwcefdvrbtngh{ymjukilop16253950}4928374af_-’
+
+	Part Two:
+		The second used a pointer to manipulate the stack (really in C it would just be accessing the character array using regular indexing, but in assembly this is simplified down to pointer logic)
+
+		The first thing you notice is the line 
+		“        mov     al, byte [rbp-0x5AC]                    # 0EFB _ 8A. 85, FFFFFA54”
+		Which moves the value in the stack location (base pointer - 0x5AC) to the lowest priority section of the ax register. Effectively this puts a single byte in the ax register from the stack… characters are a single byte.
+
+		Next is
+		 “        mov     byte [rbp-0x5CA], al                    # 0F01 _ 88. 85, FFFFFA36”
+
+		Where the same single byte is being moved from the ax register back onto the stack, this time at the location following the last location accessed in the first part, so it continues growing down the stack.
+
+		These two lines keep repeating, effectively copying items from the character array onto lower parts of the stack. If we track the address used in the first line (ex. 0x5AC) to see what was allocated in that location in the first section of the sub (which again, I used a shitty python script for), we find that it allocated the string “{1_dun_ducked_up!}}” onto the bottom of the stack. 
+
+		Obviously this doesn’t look like random garbage, so try it as the solution and it worked.
+
+	Part Three/ Four
+		Although we're done with the problem, but you're still curious...
+
+		The next 2 sections of the subroutine begin by accessing a location on the stack far earlier than anything we have existing information about, so it is effectively useless. If you want to know specifics, the first one moves the value at rbp-0x790 (significantly before this function's scope, or at least the parts that have been accessed) around to various locations in the stack. This is earlier than the first hardcoded character section accesses, so we can’t pull any information from it.
+
+		Completely meaningless without knowledge of what is at that location...
+
+Thanks!

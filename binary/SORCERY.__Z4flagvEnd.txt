@@ -1,0 +1,50 @@
+        lea     rcx, [rbp-0x790]                        # 0FD9 _ 48: 8D. 8D, FFFFF870 // Kind of meaningless, 0x790 ?
+        mov     qword [rbp-0x590], rcx                  # 0FE0 _ 48: 89. 8D, FFFFFA70 //
+        mov     qword [rbp-0x598], 1                    # 0FE7 _ 48: C7. 85, FFFFFA68, 00000001
+        mov     byte [rbp-0x599], al                    # 0FF2 _ 88. 85, FFFFFA67
+        mov     rcx, qword [rbp-0x590]                  # 0FF8 _ 48: 8B. 8D, FFFFFA70
+        mov     rdx, qword [rbp-0x598]                  # 0FFF _ 48: 8B. 95, FFFFFA68
+        mov     qword [rbp-0x578], rcx                  # 1006 _ 48: 89. 8D, FFFFFA88
+        mov     qword [rbp-0x580], rdx                  # 100D _ 48: 89. 95, FFFFFA80
+        mov     byte [rbp-0x581], al                    # 1014 _ 88. 85, FFFFFA7F
+        mov     rcx, qword [rbp-0x578]                  # 101A _ 48: 8B. 8D, FFFFFA88
+        mov     qword [rbp-0x570], rcx                  # 1021 _ 48: 89. 8D, FFFFFA90
+        mov     qword [rbp-0x568], rcx                  # 1028 _ 48: 89. 8D, FFFFFA98
+        mov     qword [rbp-0x560], rcx                  # 102F _ 48: 89. 8D, FFFFFAA0
+        mov     qword [rbp-0x558], rcx                  # 1036 _ 48: 89. 8D, FFFFFAA8
+        mov     qword [rcx+0x10], 0                     # 103D _ 48: C7. 41, 10, 00000000
+        mov     qword [rcx+0x8], 0                      # 1045 _ 48: C7. 41, 08, 00000000
+        mov     qword [rcx], 0                          # 104D _ 48: C7. 01, 00000000
+        mov     rsi, qword [rbp-0x580]                  # 1054 _ 48: 8B. B5, FFFFFA80
+        movsx   edx, byte [rbp-0x581]                   # 105B _ 0F BE. 95, FFFFFA7F
+        mov     rdi, rcx                                # 1062 _ 48: 89. CF
+        
+//Moves the value at rbp-0x790 (sigificantly before this function's scope, or at least the parts that have been accessed)
+//around to various locations in the stack
+//Completely meaningless without knowledge of what is at that location...
+
+        call    $_170                                   # 1065 _ E8, 00001AAC(rel)
+        mov     al, byte [rbp-0x5CB]                    # 106A _ 8A. 85, FFFFFA35
+        lea     rcx, [rbp-0x7A8]                        # 1070 _ 48: 8D. 8D, FFFFF858
+        mov     qword [rbp-0x540], rcx                  # 1077 _ 48: 89. 8D, FFFFFAC0
+        mov     qword [rbp-0x548], 1                    # 107E _ 48: C7. 85, FFFFFAB8, 00000001
+        mov     byte [rbp-0x549], al                    # 1089 _ 88. 85, FFFFFAB7
+        mov     rcx, qword [rbp-0x540]                  # 108F _ 48: 8B. 8D, FFFFFAC0
+        mov     rsi, qword [rbp-0x548]                  # 1096 _ 48: 8B. B5, FFFFFAB8
+        mov     qword [rbp-0x528], rcx                  # 109D _ 48: 89. 8D, FFFFFAD8
+        mov     qword [rbp-0x530], rsi                  # 10A4 _ 48: 89. B5, FFFFFAD0
+        mov     byte [rbp-0x531], al                    # 10AB _ 88. 85, FFFFFACF
+        mov     rcx, qword [rbp-0x528]                  # 10B1 _ 48: 8B. 8D, FFFFFAD8
+        mov     qword [rbp-0x520], rcx                  # 10B8 _ 48: 89. 8D, FFFFFAE0
+        mov     qword [rbp-0x518], rcx                  # 10BF _ 48: 89. 8D, FFFFFAE8
+        mov     qword [rbp-0x510], rcx                  # 10C6 _ 48: 89. 8D, FFFFFAF0
+        mov     qword [rbp-0x508], rcx                  # 10CD _ 48: 89. 8D, FFFFFAF8
+        mov     qword [rcx+0x10], 0                     # 10D4 _ 48: C7. 41, 10, 00000000
+        mov     qword [rcx+0x8], 0                      # 10DC _ 48: C7. 41, 08, 00000000
+        mov     qword [rcx], 0                          # 10E4 _ 48: C7. 01, 00000000
+        mov     rsi, qword [rbp-0x530]                  # 10EB _ 48: 8B. B5, FFFFFAD0
+        movsx   edx, byte [rbp-0x531]                   # 10F2 _ 0F BE. 95, FFFFFACF
+        mov     rdi, rcx                                # 10F9 _ 48: 89. CF
+        call    $_170                                   # 10FC _ E8, 00001A15(rel)
+
+//Similar to above

@@ -1,0 +1,39 @@
+        mov     al, byte [rbp-0x5AC]                    # 0EFB _ 8A. 85, FFFFFA54 #reg a stores {
+        mov     byte [rbp-0x5CA], al                    # 0F01 _ 88. 85, FFFFFA36 #allocates another { on end of stack
+        mov     al, byte [rbp-0x5B6]                    # 0F07 _ 8A. 85, FFFFFA4A #reg a stores 1
+        mov     byte [rbp-0x5CB], al                    # 0F0D _ 88. 85, FFFFFA35 allocates another 1 on stack
+        mov     al, byte [rbp-0x5C8]                    # 0F13 _ 8A. 85, FFFFFA38 reg a stores _
+        mov     byte [rbp-0x5CC], al                    # 0F19 _ 88. 85, FFFFFA34 al _ on stack
+        mov     al, byte [rbp-0x5A4]                    # 0F1F _ 8A. 85, FFFFFA5C reg a st d
+        mov     byte [rbp-0x5CD], al                    # 0F25 _ 88. 85, FFFFFA33 
+        mov     al, byte [rbp-0x5B0]                    # 0F2B _ 8A. 85, FFFFFA50
+        mov     byte [rbp-0x5CE], al                    # 0F31 _ 88. 85, FFFFFA32
+        mov     al, byte [rbp-0x5A9]                    # 0F37 _ 8A. 85, FFFFFA57
+        mov     byte [rbp-0x5CF], al                    # 0F3D _ 88. 85, FFFFFA31
+        mov     al, byte [rbp-0x5C8]                    # 0F43 _ 8A. 85, FFFFFA38
+        mov     byte [rbp-0x5D0], al                    # 0F49 _ 88. 85, FFFFFA30
+        mov     al, byte [rbp-0x5A4]                    # 0F4F _ 8A. 85, FFFFFA5C
+        mov     byte [rbp-0x5D1], al                    # 0F55 _ 88. 85, FFFFFA2F
+        mov     al, byte [rbp-0x5B0]                    # 0F5B _ 8A. 85, FFFFFA50
+        mov     byte [rbp-0x5D2], al                    # 0F61 _ 88. 85, FFFFFA2E
+        mov     al, byte [rbp-0x5A1]                    # 0F67 _ 8A. 85, FFFFFA5F
+        mov     byte [rbp-0x5D3], al                    # 0F6D _ 88. 85, FFFFFA2D
+        mov     al, byte [rbp-0x5B1]                    # 0F73 _ 8A. 85, FFFFFA4F
+        mov     byte [rbp-0x5D4], al                    # 0F79 _ 88. 85, FFFFFA2C
+        mov     al, byte [rbp-0x5A2]                    # 0F7F _ 8A. 85, FFFFFA5E
+        mov     byte [rbp-0x5D5], al                    # 0F85 _ 88. 85, FFFFFA2B
+        mov     al, byte [rbp-0x5A4]                    # 0F8B _ 8A. 85, FFFFFA5C
+        mov     byte [rbp-0x5D6], al                    # 0F91 _ 88. 85, FFFFFA2A
+        mov     al, byte [rbp-0x5C8]                    # 0F97 _ 8A. 85, FFFFFA38
+        mov     byte [rbp-0x5D7], al                    # 0F9D _ 88. 85, FFFFFA29
+        mov     al, byte [rbp-0x5B0]                    # 0FA3 _ 8A. 85, FFFFFA50
+        mov     byte [rbp-0x5D8], al                    # 0FA9 _ 88. 85, FFFFFA28
+        mov     al, byte [rbp-0x5B5]                    # 0FAF _ 8A. 85, FFFFFA4B
+        mov     byte [rbp-0x5D9], al                    # 0FB5 _ 88. 85, FFFFFA27
+        mov     al, byte [rbp-0x59A]                    # 0FBB _ 8A. 85, FFFFFA66
+        mov     byte [rbp-0x5DA], al                    # 0FC1 _ 88. 85, FFFFFA26
+        mov     al, byte [rbp-0x5BE]                    # 0FC7 _ 8A. 85, FFFFFA42
+        mov     byte [rbp-0x5DB], al                    # 0FCD _ 88. 85, FFFFFA25
+        mov     al, byte [rbp-0x5CA]                    # 0FD3 _ 8A. 85, FFFFFA36
+
+Allocates '{1_dun_ducked_up!}}' on stack

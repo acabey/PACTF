@@ -1,0 +1,150 @@
+__Z4flagv:                                              # Function
+        .type   __Z4flagv, @function
+        push    rbp                                     # 0DA0 _ 55
+        mov     rbp, rsp                                # 0DA1 _ 48: 89. E5
+        sub     rsp, 2368                               # 0DA4 _ 48: 81. EC, 00000940
+        mov     byte [rbp-0x59A], 33                    # 0DAB _ C6. 85, FFFFFA66, 21
+        mov     byte [rbp-0x59B], 113                   # 0DB2 _ C6. 85, FFFFFA65, 71
+        mov     byte [rbp-0x59C], 122                   # 0DB9 _ C6. 85, FFFFFA64, 7A
+        mov     byte [rbp-0x59D], 115                   # 0DC0 _ C6. 85, FFFFFA63, 73
+        mov     byte [rbp-0x59E], 97                    # 0DC7 _ C6. 85, FFFFFA62, 61
+        mov     byte [rbp-0x59F], 120                   # 0DCE _ C6. 85, FFFFFA61, 78
+        mov     byte [rbp-0x5A0], 119                   # 0DD5 _ C6. 85, FFFFFA60, 77
+        mov     byte [rbp-0x5A1], 99                    # 0DDC _ C6. 85, FFFFFA5F, 63
+        mov     byte [rbp-0x5A2], 101                   # 0DE3 _ C6. 85, FFFFFA5E, 65
+        mov     byte [rbp-0x5A3], 102                   # 0DEA _ C6. 85, FFFFFA5D, 66
+        mov     byte [rbp-0x5A4], 100                   # 0DF1 _ C6. 85, FFFFFA5C, 64
+        mov     byte [rbp-0x5A5], 118                   # 0DF8 _ C6. 85, FFFFFA5B, 76
+        mov     byte [rbp-0x5A6], 114                   # 0DFF _ C6. 85, FFFFFA5A, 72
+        mov     byte [rbp-0x5A7], 98                    # 0E06 _ C6. 85, FFFFFA59, 62
+        mov     byte [rbp-0x5A8], 116                   # 0E0D _ C6. 85, FFFFFA58, 74
+        mov     byte [rbp-0x5A9], 110                   # 0E14 _ C6. 85, FFFFFA57, 6E
+        mov     byte [rbp-0x5AA], 103                   # 0E1B _ C6. 85, FFFFFA56, 67
+        mov     byte [rbp-0x5AB], 104                   # 0E22 _ C6. 85, FFFFFA55, 68
+        mov     byte [rbp-0x5AC], 123                   # 0E29 _ C6. 85, FFFFFA54, 7B
+        mov     byte [rbp-0x5AD], 121                   # 0E30 _ C6. 85, FFFFFA53, 79
+        mov     byte [rbp-0x5AE], 109                   # 0E37 _ C6. 85, FFFFFA52, 6D
+        mov     byte [rbp-0x5AF], 106                   # 0E3E _ C6. 85, FFFFFA51, 6A
+        mov     byte [rbp-0x5B0], 117                   # 0E45 _ C6. 85, FFFFFA50, 75
+        mov     byte [rbp-0x5B1], 107                   # 0E4C _ C6. 85, FFFFFA4F, 6B
+        mov     byte [rbp-0x5B2], 105                   # 0E53 _ C6. 85, FFFFFA4E, 69
+        mov     byte [rbp-0x5B3], 108                   # 0E5A _ C6. 85, FFFFFA4D, 6C
+        mov     byte [rbp-0x5B4], 111                   # 0E61 _ C6. 85, FFFFFA4C, 6F
+        mov     byte [rbp-0x5B5], 112                   # 0E68 _ C6. 85, FFFFFA4B, 70
+        mov     byte [rbp-0x5B6], 49                    # 0E6F _ C6. 85, FFFFFA4A, 31
+        mov     byte [rbp-0x5B7], 54                    # 0E76 _ C6. 85, FFFFFA49, 36
+        mov     byte [rbp-0x5B8], 50                    # 0E7D _ C6. 85, FFFFFA48, 32
+        mov     byte [rbp-0x5B9], 53                    # 0E84 _ C6. 85, FFFFFA47, 35
+        mov     byte [rbp-0x5BA], 51                    # 0E8B _ C6. 85, FFFFFA46, 33
+        mov     byte [rbp-0x5BB], 57                    # 0E92 _ C6. 85, FFFFFA45, 39
+        mov     byte [rbp-0x5BC], 53                    # 0E99 _ C6. 85, FFFFFA44, 35
+        mov     byte [rbp-0x5BD], 48                    # 0EA0 _ C6. 85, FFFFFA43, 30
+        mov     byte [rbp-0x5BE], 125                   # 0EA7 _ C6. 85, FFFFFA42, 7D
+        mov     byte [rbp-0x5BF], 52                    # 0EAE _ C6. 85, FFFFFA41, 34
+        mov     byte [rbp-0x5C0], 57                    # 0EB5 _ C6. 85, FFFFFA40, 39
+        mov     byte [rbp-0x5C1], 50                    # 0EBC _ C6. 85, FFFFFA3F, 32
+        mov     byte [rbp-0x5C2], 56                    # 0EC3 _ C6. 85, FFFFFA3E, 38
+        mov     byte [rbp-0x5C3], 51                    # 0ECA _ C6. 85, FFFFFA3D, 33
+        mov     byte [rbp-0x5C4], 55                    # 0ED1 _ C6. 85, FFFFFA3C, 37
+        mov     byte [rbp-0x5C5], 52                    # 0ED8 _ C6. 85, FFFFFA3B, 34
+        mov     byte [rbp-0x5C6], 97                    # 0EDF _ C6. 85, FFFFFA3A, 61
+        mov     byte [rbp-0x5C7], 102                   # 0EE6 _ C6. 85, FFFFFA39, 66
+        mov     byte [rbp-0x5C8], 95                    # 0EED _ C6. 85, FFFFFA38, 5F
+        mov     byte [rbp-0x5C9], 45                    # 0EF4 _ C6. 85, FFFFFA37, 2D
+
+//Moves "!qzsaxwcefdvrbtngh{ymjukilop16253950}4928374af_-" to stack
+
+        mov     al, byte [rbp-0x5AC]                    # 0EFB _ 8A. 85, FFFFFA54
+        mov     byte [rbp-0x5CA], al                    # 0F01 _ 88. 85, FFFFFA36
+        mov     al, byte [rbp-0x5B6]                    # 0F07 _ 8A. 85, FFFFFA4A
+        mov     byte [rbp-0x5CB], al                    # 0F0D _ 88. 85, FFFFFA35
+        mov     al, byte [rbp-0x5C8]                    # 0F13 _ 8A. 85, FFFFFA38
+        mov     byte [rbp-0x5CC], al                    # 0F19 _ 88. 85, FFFFFA34
+        mov     al, byte [rbp-0x5A4]                    # 0F1F _ 8A. 85, FFFFFA5C
+        mov     byte [rbp-0x5CD], al                    # 0F25 _ 88. 85, FFFFFA33 
+        mov     al, byte [rbp-0x5B0]                    # 0F2B _ 8A. 85, FFFFFA50
+        mov     byte [rbp-0x5CE], al                    # 0F31 _ 88. 85, FFFFFA32
+        mov     al, byte [rbp-0x5A9]                    # 0F37 _ 8A. 85, FFFFFA57
+        mov     byte [rbp-0x5CF], al                    # 0F3D _ 88. 85, FFFFFA31
+        mov     al, byte [rbp-0x5C8]                    # 0F43 _ 8A. 85, FFFFFA38
+        mov     byte [rbp-0x5D0], al                    # 0F49 _ 88. 85, FFFFFA30
+        mov     al, byte [rbp-0x5A4]                    # 0F4F _ 8A. 85, FFFFFA5C
+        mov     byte [rbp-0x5D1], al                    # 0F55 _ 88. 85, FFFFFA2F
+        mov     al, byte [rbp-0x5B0]                    # 0F5B _ 8A. 85, FFFFFA50
+        mov     byte [rbp-0x5D2], al                    # 0F61 _ 88. 85, FFFFFA2E
+        mov     al, byte [rbp-0x5A1]                    # 0F67 _ 8A. 85, FFFFFA5F
+        mov     byte [rbp-0x5D3], al                    # 0F6D _ 88. 85, FFFFFA2D
+        mov     al, byte [rbp-0x5B1]                    # 0F73 _ 8A. 85, FFFFFA4F
+        mov     byte [rbp-0x5D4], al                    # 0F79 _ 88. 85, FFFFFA2C
+        mov     al, byte [rbp-0x5A2]                    # 0F7F _ 8A. 85, FFFFFA5E
+        mov     byte [rbp-0x5D5], al                    # 0F85 _ 88. 85, FFFFFA2B
+        mov     al, byte [rbp-0x5A4]                    # 0F8B _ 8A. 85, FFFFFA5C
+        mov     byte [rbp-0x5D6], al                    # 0F91 _ 88. 85, FFFFFA2A
+        mov     al, byte [rbp-0x5C8]                    # 0F97 _ 8A. 85, FFFFFA38
+        mov     byte [rbp-0x5D7], al                    # 0F9D _ 88. 85, FFFFFA29
+        mov     al, byte [rbp-0x5B0]                    # 0FA3 _ 8A. 85, FFFFFA50
+        mov     byte [rbp-0x5D8], al                    # 0FA9 _ 88. 85, FFFFFA28
+        mov     al, byte [rbp-0x5B5]                    # 0FAF _ 8A. 85, FFFFFA4B
+        mov     byte [rbp-0x5D9], al                    # 0FB5 _ 88. 85, FFFFFA27
+        mov     al, byte [rbp-0x59A]                    # 0FBB _ 8A. 85, FFFFFA66
+        mov     byte [rbp-0x5DA], al                    # 0FC1 _ 88. 85, FFFFFA26
+        mov     al, byte [rbp-0x5BE]                    # 0FC7 _ 8A. 85, FFFFFA42
+        mov     byte [rbp-0x5DB], al                    # 0FCD _ 88. 85, FFFFFA25
+        mov     al, byte [rbp-0x5CA]                    # 0FD3 _ 8A. 85, FFFFFA36
+
+//Moves '{1_dun_ducked_up!}}' to stack
+
+        lea     rcx, [rbp-0x790]                        # 0FD9 _ 48: 8D. 8D, FFFFF870 // Kind of meaningless, 0x790 ?
+        mov     qword [rbp-0x590], rcx                  # 0FE0 _ 48: 89. 8D, FFFFFA70 //
+        mov     qword [rbp-0x598], 1                    # 0FE7 _ 48: C7. 85, FFFFFA68, 00000001
+        mov     byte [rbp-0x599], al                    # 0FF2 _ 88. 85, FFFFFA67
+        mov     rcx, qword [rbp-0x590]                  # 0FF8 _ 48: 8B. 8D, FFFFFA70
+        mov     rdx, qword [rbp-0x598]                  # 0FFF _ 48: 8B. 95, FFFFFA68
+        mov     qword [rbp-0x578], rcx                  # 1006 _ 48: 89. 8D, FFFFFA88
+        mov     qword [rbp-0x580], rdx                  # 100D _ 48: 89. 95, FFFFFA80
+        mov     byte [rbp-0x581], al                    # 1014 _ 88. 85, FFFFFA7F
+        mov     rcx, qword [rbp-0x578]                  # 101A _ 48: 8B. 8D, FFFFFA88
+        mov     qword [rbp-0x570], rcx                  # 1021 _ 48: 89. 8D, FFFFFA90
+        mov     qword [rbp-0x568], rcx                  # 1028 _ 48: 89. 8D, FFFFFA98
+        mov     qword [rbp-0x560], rcx                  # 102F _ 48: 89. 8D, FFFFFAA0
+        mov     qword [rbp-0x558], rcx                  # 1036 _ 48: 89. 8D, FFFFFAA8
+        mov     qword [rcx+0x10], 0                     # 103D _ 48: C7. 41, 10, 00000000
+        mov     qword [rcx+0x8], 0                      # 1045 _ 48: C7. 41, 08, 00000000
+        mov     qword [rcx], 0                          # 104D _ 48: C7. 01, 00000000
+        mov     rsi, qword [rbp-0x580]                  # 1054 _ 48: 8B. B5, FFFFFA80
+        movsx   edx, byte [rbp-0x581]                   # 105B _ 0F BE. 95, FFFFFA7F
+        mov     rdi, rcx                                # 1062 _ 48: 89. CF
+        
+//Moves the value at rbp-0x790 (sigificantly before this function's scope, or at least the parts that have been accessed)
+//around to various locations in the stack
+//Completely meaningless without knowledge of what is at that location...
+
+        call    $_170                                   # 1065 _ E8, 00001AAC(rel)
+        mov     al, byte [rbp-0x5CB]                    # 106A _ 8A. 85, FFFFFA35
+        lea     rcx, [rbp-0x7A8]                        # 1070 _ 48: 8D. 8D, FFFFF858
+        mov     qword [rbp-0x540], rcx                  # 1077 _ 48: 89. 8D, FFFFFAC0
+        mov     qword [rbp-0x548], 1                    # 107E _ 48: C7. 85, FFFFFAB8, 00000001
+        mov     byte [rbp-0x549], al                    # 1089 _ 88. 85, FFFFFAB7
+        mov     rcx, qword [rbp-0x540]                  # 108F _ 48: 8B. 8D, FFFFFAC0
+        mov     rsi, qword [rbp-0x548]                  # 1096 _ 48: 8B. B5, FFFFFAB8
+        mov     qword [rbp-0x528], rcx                  # 109D _ 48: 89. 8D, FFFFFAD8
+        mov     qword [rbp-0x530], rsi                  # 10A4 _ 48: 89. B5, FFFFFAD0
+        mov     byte [rbp-0x531], al                    # 10AB _ 88. 85, FFFFFACF
+        mov     rcx, qword [rbp-0x528]                  # 10B1 _ 48: 8B. 8D, FFFFFAD8
+        mov     qword [rbp-0x520], rcx                  # 10B8 _ 48: 89. 8D, FFFFFAE0
+        mov     qword [rbp-0x518], rcx                  # 10BF _ 48: 89. 8D, FFFFFAE8
+        mov     qword [rbp-0x510], rcx                  # 10C6 _ 48: 89. 8D, FFFFFAF0
+        mov     qword [rbp-0x508], rcx                  # 10CD _ 48: 89. 8D, FFFFFAF8
+        mov     qword [rcx+0x10], 0                     # 10D4 _ 48: C7. 41, 10, 00000000
+        mov     qword [rcx+0x8], 0                      # 10DC _ 48: C7. 41, 08, 00000000
+        mov     qword [rcx], 0                          # 10E4 _ 48: C7. 01, 00000000
+        mov     rsi, qword [rbp-0x530]                  # 10EB _ 48: 8B. B5, FFFFFAD0
+        movsx   edx, byte [rbp-0x531]                   # 10F2 _ 0F BE. 95, FFFFFACF
+        mov     rdi, rcx                                # 10F9 _ 48: 89. CF
+        call    $_170                                   # 10FC _ E8, 00001A15(rel)
+
+//Similar to above
+
+# Note: Immediate operand could be made smaller by sign extension
+        jmp     $_001                                   # 1101 _ E9, 00000000
+        .size   __Z4flagv, . - __Z4flagv                # End of function is probably here
